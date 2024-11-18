@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="logo_container">
+      <h1 style="color: rgba(101, 242, 255, 0.848); font-weight: bold; font-size: 40px; font-family: 'Courier New', Courier, monospace;">To-do </h1>
+    </header>
+
+    <section class="main_container">
+      <main>
+        <form id="from">
+          <input
+            type="text"
+            placeholder="Enter Your Daily Task"
+            id="input_text"
+            required
+          />
+       
+          <input type="date" id="date" placeholder="Date" required />
+
+          <select name="priority" id="priority" placeholder="Priority">
+            <option value="heigh">Priority</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+
+          <button type="submit" id="add" style="background-color: rgb(0, 20, 56);">
+            Add
+            <img src="./icon/plus.svg" alt="" style="color: rgb(0, 20, 56);" />
+          </button>
+
+          
+        </form>
+       
+        <section class="newtasks">
+          <div class="all_task_container">
+            <div>
+              <h4 style="color: rgb(0, 20, 56);">To-do</h4>
+              <div class="all_task"  style="background-color: rgb(0, 20, 56);">0</div>
+            </div>
+            <div>
+              <h4 style="color: rgb(0, 20, 56);">High Priority</h4>
+              <div class="all_Heigh_priority" style="background-color: rgb(0, 20, 56);">0</div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="notask">
+            <img src="./icon/Clipboard.svg" alt="notask" />
+            <p>You have no To-do Items As of now</p>
+          </div>
+          <div class="newtaskadd">
+          </div>
+        </section>
+        <section class="started">
+          
+
+          <div class="startedadd"></div>
+        </section>
+        <div class="line"></div>
+        <section class="completed">
+          
+
+          <div class="completedadd"></div>
+        </section>
+        <div class="line"></div>
+      </main>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
